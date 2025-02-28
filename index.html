@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gelila Assefa - Data Science Portfolio</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f2ec;
+            color: #5a3e2b;
+            scroll-behavior: smooth;
+        }
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            height: 100vh;
+            text-align: center;
+            color: #fff;
+            background-color: #8b5e3b;
+            position: relative;
+        }
+        .hero h1 {
+            font-size: 50px;
+            margin: 10px 0;
+        }
+        .hero p {
+            font-size: 22px;
+            max-width: 600px;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            position: sticky;
+            top: 0;
+            background: #c4a484;
+            padding: 15px;
+            z-index: 1000;
+        }
+        nav a {
+            color: #5a3e2b;
+            padding: 15px 40px;
+            text-decoration: none;
+            font-size: 18px;
+            transition: all 0.3s ease-in-out;
+        }
+        nav a:hover {
+            color: #8b5e3b;
+            text-decoration: underline;
+        }
+        .container {
+            width: 85%;
+            margin: auto;
+            text-align: center;
+            padding: 50px 0;
+        }
+        .projects, .experience-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        .project-card, .experience-card {
+            background: #e6d5c0;
+            padding: 30px;
+            border-radius: 14px;
+            box-shadow: 0 6px 18px rgba(90, 62, 43, 0.15);
+            transition: transform 0.3s ease-in-out;
+            cursor: pointer;
+        }
+        .project-card:hover, .experience-card:hover {
+            transform: scale(1.05);
+        }
+        .resume-section {
+            text-align: center;
+            margin: 40px 0;
+        }
+        .resume-button {
+            display: inline-block;
+            padding: 15px 30px;
+            background: #8b5e3b;
+            color: #fff;
+            font-size: 18px;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background 0.3s;
+        }
+        .resume-button:hover {
+            background: #6b4226;
+        }
+        footer {
+            text-align: center;
+            padding: 40px;
+            background: #8b5e3b;
+            color: #fff;
+            font-size: 18px;
+        }
+        a {
+            color: #5a3e2b;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    
+    <section class="hero">
+        <h1>Gelila Assefa</h1>
+        <p>Data Scientist | AI & Machine Learning Enthusiast</p>
+    </section>
+
+    <div class="container">
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I am a Data Scientist with expertise in Artificial Intelligence, Machine Learning, and Predictive Analytics. I specialize in building AI-driven solutions that transform data into actionable insights. Currently, I am a Research Assistant at American University, focusing on fine-tuning AI models for specialized applications.</p>
+            <p>My interests lie in Fine-Tuning, Generative Adversarial Networks (GANs), Natural Language Processing (NLP), and Time Series Forecasting. I have experience working with healthcare, finance, and environmental data, where I apply machine learning to solve real-world problems.</p>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="projects">
+                <div class="project-card">
+                    <h3>Environmental Protector App</h3>
+                    <p>Developed an AI-powered system for environmental monitoring and impact analysis.</p>
+                    <p><a href="https://github.com/GelilaAssefa/environmental-protectors" target="_blank">View on GitHub</a></p>
+                </div>
+                <div class="project-card">
+                    <h3>Shiny Dashboard</h3>
+                    <p>Created an interactive dashboard for financial data visualization using R and Shiny.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Sentiment Analysis on COVID-19 Tweets</h3>
+                    <p>Built an NLP model to classify sentiment in COVID-19 tweets using BERT & Transformer models.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Time Series Forecasting</h3>
+                    <p>Applied ARIMA and LSTM models to predict financial trends and economic indicators.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience">
+            <h2>Work Experience</h2>
+            <div class="experience-grid">
+                <div class="experience-card">
+                    <h3>Research Assistant - American University</h3>
+                    <p>Conducting research on AI model tuning, optimizing performance for specialized machine learning applications.</p>
+                </div>
+                <div class="experience-card">
+                    <h3>Mid-Senior QA Engineer - Campbell Marketing & Communication</h3>
+                    <p>Led testing strategies for web and mobile apps, ensuring quality through automation.</p>
+                </div>
+                <div class="experience-card">
+                    <h3>Data Analyst - CareFirst BlueCross BlueShield</h3>
+                    <p>Optimized healthcare data reporting and supported data-driven decisions.</p>
+                </div>
+                <div class="experience-card">
+                    <h3>QA Analyst - LaCire</h3>
+                    <p>Worked on data migration and contract management, optimizing testing procedures.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: <a href="mailto:gelila.assefa3@gmail.com">gelila.assefa3@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://linkedin.com/in/gelila-assefa" target="_blank">linkedin.com/in/gelila-assefa</a></p>
+        <p>GitHub: <a href="https://github.com/gelila-assefa" target="_blank">github.com/gelila-assefa</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Gelila Assefa. All rights reserved.</p>
+    </footer>
+</body>
+</html>
